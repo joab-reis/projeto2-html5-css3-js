@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>verificador de idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>titulo</h1>
+        <h1>verifique sua idade</h1>
     </header>
     <section>
         <div>
-            ola
+            <p>ano de nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">feminino</label>
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
         </div>
-        <div>
-            mundo
+        <div id="res">
+            preencha os dados acima pra ver o resultado!
         </div>
     </section>
     <footer>
